@@ -17,11 +17,15 @@ h1 {
   font-size: 1.6rem;
 }
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin:0;
 }
 #nav{
   height: 100vh;
+}
+#nav h2 {
+  /* font-family: 'Staatliches', cursive; */
+  font-family: 'Shrikhand', cursive;
 }
 .bg-black {
   background-color: #1d2024
@@ -31,5 +35,15 @@ h2 {
 }
 .no-margin {
   margin: 0px;
+}
+#author {
+  border-radius: 100rem;
+}
+img.img-fluid {
+  opacity: 1;
+  transition: all 0.2s
+}
+img.img-fluid:hover {
+  opacity: 0.8;
 }
 

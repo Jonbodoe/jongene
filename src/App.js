@@ -14,22 +14,17 @@ import BodyContainer from './components/main/body'
 function App() {
   return (
     <Router>
-      <NavBar/>
+      <NavBar />
       <BodyContainer>
-      {/* Fixed Nav */}
         <Switch>
-            <Route path="/contact">
-                  <Contact />
-              </Route>
-              <Route path="/photos">
-                  <div>Photos</div>
-                  {/* <Users /> */}
-              </Route>
-              <Route path="/">
-                <Overview/>
-              </Route>
-          </Switch>
-        </BodyContainer>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Overview />
+          </Route>
+        </Switch>
+      </BodyContainer>
     </Router>
   );
 }
