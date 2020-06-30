@@ -46,4 +46,23 @@ img.img-fluid {
 img.img-fluid:hover {
   opacity: 0.8;
 }
+#menu-mobile {
+  display: none;
+}
 
+/* 768 */
+@media only screen and (max-width: 768px) {
+  #filler, #author {
+    height: 8rem;
+    /* display: none; */
+  }
+  #nav {
+    display: none;
+  }
+  #menu-mobile {
+    display: inline;
+  }
+  /* #gallery {
+    padding: 0rem 3rem
+  } */
+}

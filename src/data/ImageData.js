@@ -64,7 +64,7 @@ const Images =
         },
         {
             index: 8,
-            src: require('../img/k-and-a.jpg'),
+            src: require('../img/doit.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: RIGHT

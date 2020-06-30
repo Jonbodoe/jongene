@@ -10,18 +10,20 @@ import {
 
 const NavBar = () => {
     return (
-        <nav id="nav" className="col-md-3 px-5 py-4 fixed-top bg-white">
-            <img id="author" className="img-fluid p-lg-4" src={require('../../img/protraitshot.jpeg')} alt="Jonthan Gene Protrait Shot" />
+        <nav id="nav" className="col-md-3 px-5 py-2 fixed-top bg-white">
+            <div className="d-flex justify-content-center">
+                <img id="author" className="img-fluid p-lg-4" src={require('../../img/protraitshot.jpeg')} alt="Jonthan Gene Protrait Shot" />
+            </div>
             <div className="py-3">
                 <div className="text-center">
                     <h2 className="font-weight-bolder no-xspace pb-1">JONATHAN GENE</h2>
                     <p className="text-secondary">Media Content Creator</p>
                     <div className="border-bottom"></div>
                 </div>
-                <div className="py-3 text-secondary text-center d-flex justify-content-around px-md-3">
-                    <i class="fa fa-instagram fa-2x px-1"></i>
-                    <i class="fa fa-file-text-o fa-2x px-1"></i>
-                    <i class="fa fa-envelope-o fa-2x px-1"></i>
+                <div className="py-sm-3 text-secondary text-center d-flex justify-content-around px-sm-3">
+                    <a className="text-danger" target="_blank" href="instagram.com"><i className="fa fa-instagram fa-2x px-1"></i></a>
+                    <a className="text-danger" target="_blank" href="#"><i className="fa fa-file-text-o fa-2x px-1"></i></a>
+                    <a className="text-danger" target="_blank" href="mailto:"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
                 </div>
             </div>
         </nav>
