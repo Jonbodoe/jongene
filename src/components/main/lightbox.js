@@ -3,7 +3,7 @@ import Images from '../../data/ImageData';
 
 
 const LightBox = (props) => {
-    console.log(props.info.index, Images.length)
+    // console.log(props.info.index, Images.length)
     let currentIndex = props.info.index
     let currentImage = Images.filter((image) => currentIndex === image.index)
     return (
