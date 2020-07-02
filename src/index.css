@@ -60,6 +60,10 @@ h2 {
   z-index: 9999;
   height: 100vh
 }
+.lightbox-image {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 .no-scroll {
   height:100%;
   overflow: hidden;

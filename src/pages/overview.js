@@ -32,15 +32,18 @@ const Overview = () => {
     // splitImages(images)
     return (
         <>
-            <div id="gallery" className={`container-fluid py-2 ${lightBoxState.lightBoxOpen? 'no-scroll' : ''}`}>
+            {
+                lightBoxState.lightBoxOpen ? <LightBox handler={setLightBox} info={lightBoxState} /> : <></>
+            }
+            <div id="gallery" className={`container-fluid py-2 ${lightBoxState.lightBoxOpen ? 'no-scroll' : ''}`}>
                 <div id="menu-mobile">
-                    <div className="d-flex justify-content-center py-3 bg-white fixed-top">
+                    <div className="d-flex justify-content-center py-2 bg-white fixed-top">
                         <div className="d-flex">
                             <div className="px-5">
                                 <h2 className="font-weight-bolder no-xspace pb-1">JONATHAN GENE</h2>
                                 <p className="text-secondary">Media Content Creator</p>
                                 <div className="border-bottom"></div>
-                                <div className="py-sm-3 pt-3 text-secondary text-center d-flex justify-content-around px-sm-3">
+                                <div className="py-sm-2 pt-2 text-secondary text-center d-flex justify-content-around px-sm-3">
                                     <a className="text-danger" target="_blank" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
                                     <a className="text-danger" target="_blank" href="mailto:jonathangene@gmail.com"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
                                 </div>
@@ -48,12 +51,9 @@ const Overview = () => {
                         </div>
                     </div>
                 </div>
-                <div id="content" className={`row d-flex justify-content-center ${lightBoxState.lightBoxOpen? 'no-scroll' : ''}`}>
+                <div id="content" className={`row d-flex justify-content-center ${lightBoxState.lightBoxOpen ? 'no-scroll' : ''}`}>
                     <div id="filler" className="col-lg-2">
                     </div>
-                    {
-                        lightBoxState.lightBoxOpen ? <LightBox handler={setLightBox} info={lightBoxState} /> : <></>
-                    }
                     <div className="col-lg-5 px-lg-4 d-flex justify-content-center">
                         <div className="flex-column image-column pl-lg-4">
                             <Fade bottom>

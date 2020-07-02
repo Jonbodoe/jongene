@@ -7,8 +7,8 @@ const LightBox = (props) => {
     let currentIndex = props.info.index
     let currentImage = Images.filter((image) => currentIndex === image.index)
     return (
-        <div id="lightbox" className="container-fluid d-flex align-self-center bg-white p-4">
-            <div className="row w-100 d-flex justify-content-center">
+        <div id="lightbox" className="container-fluid d-flex align-self-center bg-white p-lg-4">
+            <div className="row d-flex justify-content-center">
                 <div className="col-lg-2 d-flex align-self-center justify-content-center">
                     <div className="arrow-guide">
                         <button className="btn btn-white" disabled={props.info.index === 0 ? true : false} onClick={() => props.handler({
@@ -19,8 +19,8 @@ const LightBox = (props) => {
                         </button>
                     </div>
                 </div>
-                <div className="col-lg-8 px-4">
-                    <div className="d-flex justify-content-center align-self-center">
+                <div className="col-lg-8 px-lg-4 d-flex align-self-center">
+                    {/* <div className="d-flex justify-content-center align-self-center"> */}
                         <div>
                             <div>
                                 <button className="btn btn-white" onClick={() => props.handler({
@@ -28,11 +28,13 @@ const LightBox = (props) => {
                                     lightBoxOpen: !props.info.lightBoxOpen
                                 })}>
                                     <i className="fa fa-times"></i> Collapse
-                            </button>
+                                </button>
                             </div>
-                            <img className={currentImage[0].orientation === "LANDSCAPE" ? 'img-fluid' : 'protrait-img'} src={currentImage[0].src} alt="" />
+                            <div className="d-flex justify-content-center">
+                                <img className={`lightbox-image ${currentImage[0].orientation === "LANDSCAPE" ? 'img-fluid' : 'protrait-img'}`} src={currentImage[0].src} alt="" />
+                            </div>
                         </div>
-                    </div>
+                    {/* </div> */}
                 </div>
                 <div className="col-lg-2 d-flex align-self-center justify-content-center">
                     <div className="arrow-guide">
