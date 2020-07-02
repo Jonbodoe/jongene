@@ -1,5 +1,4 @@
 import React from 'react';
-// import SplitColumn from '../elements/splitColumn'
 
 const BodyContainer = (props) => {
     return(

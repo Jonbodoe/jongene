@@ -67,6 +67,13 @@ h2 {
 .padding-top {
   padding-top: 10rem;
 }
+.protrait-img{
+  max-width: 58vh;
+  height: auto;
+}
+#mobile-arrow-guide {
+  display: none;
+}
 /* 768 */
 @media only screen and (max-width: 992px) {
   #filler, #author {
@@ -78,6 +85,16 @@ h2 {
   }
   #menu-mobile {
     display: inline;
+  }
+  .protrait-img{
+    max-width: 100%;
+    height: auto;
+  }
+  .arrow-guide {
+    display: none;
+  }
+  #mobile-arrow-guide {
+    display: flex;
   }
   /* #gallery {
     padding: 0rem 3rem

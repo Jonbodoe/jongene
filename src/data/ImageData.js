@@ -8,14 +8,14 @@ const Images =
     [
         {
             index: 0,
-            src: require('../img/bboy.jpg'),
+            src: require('../img/fish-tank.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: LEFT,
         },
         {
             index: 1,
-            src: require('../img/pink-bg.jpg'),
+            src: require('../img/tokyo4.jpg'),
             alt: "",
             orientation: PORTRAIT,
             column: RIGHT
@@ -57,7 +57,7 @@ const Images =
         },
         {
             index: 7,
-            src: require('../img/fish-tank.jpg'),
+            src: require('../img/bboy.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: LEFT
@@ -87,7 +87,7 @@ const Images =
             index: 11,
             src: require('../img/csx.jpg'),
             alt: "",
-            orientation: PORTRAIT,
+            orientation: LANDSCAPE,
             column: RIGHT
         },
         {
@@ -146,6 +146,35 @@ const Images =
             orientation: LANDSCAPE,
             column: RIGHT
         },
+        {
+            index: 20,
+            src: require('../img/yellow.jpg'),
+            alt: "",
+            orientation: PORTRAIT,
+            column: RIGHT
+        },
+        {
+            index: 21,
+            src: require('../img/tokyo5.jpg'),
+            alt: "",
+            orientation: LANDSCAPE,
+            column: LEFT
+        },
+        {
+            index: 22,
+            src: require('../img/skyscraper.jpg'),
+            alt: "",
+            orientation: LANDSCAPE,
+            column: RIGHT
+        },
+        {
+            index: 23,
+            src: require('../img/pink-bg.jpg'),
+            alt: "",
+            orientation: PORTRAIT,
+            column: LEFT
+        }
+
 
     ]
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState } from 'react';
 import Images from '../data/ImageData';
 import Fade from 'react-reveal/Fade';
 import ImageComponent from '../components/secondary/imageComponent';
@@ -41,9 +41,9 @@ const Overview = () => {
                                 <p className="text-secondary">Media Content Creator</p>
                                 <div className="border-bottom"></div>
                                 <div className="py-sm-3 pt-3 text-secondary text-center d-flex justify-content-around px-sm-3">
-                                    <a className="text-danger" target="_blank" href="instagram.com"><i className="fa fa-instagram fa-2x px-1"></i></a>
+                                    <a className="text-danger" target="_blank" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
                                     <a className="text-danger" target="_blank" href="#"><i className="fa fa-file-text-o fa-2x px-1"></i></a>
-                                    <a className="text-danger" target="_blank" href="mailto:"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
+                                    <a className="text-danger" target="_blank" href="mailto:jonathangene@gmail.com"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@ const Overview = () => {
                         lightBoxState.lightBoxOpen ? <LightBox handler={setLightBox} info={lightBoxState} /> : <></>
                     }
                     <div className="col-lg-5 px-lg-4 d-flex justify-content-center">
-                        <div className="flex-column image-column pl-lg-5">
+                        <div className="flex-column image-column pl-lg-4">
                             <Fade bottom>
                                 {
                                     leftImages.map((img) =>
@@ -69,7 +69,7 @@ const Overview = () => {
                         </div>
                     </div>
                     <div className="col-lg-5 px-lg-4 d-flex justify-content-center">
-                        <div className="flex-column image-column pr-lg-5">
+                        <div className="flex-column image-column pr-lg-4">
                             <Fade bottom>
                                 {
                                     rightImages.map((img) =>
