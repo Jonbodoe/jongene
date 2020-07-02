@@ -15,7 +15,7 @@ function App() {
       <NavBar />
       <BodyContainer>
         <Switch>
-          <Route path={`${process.env.PUBLIC_URL}/`}>
+          <Route exact path={`${process.env.PUBLIC_URL}/`}>
             <Overview />
           </Route>
         </Switch>
