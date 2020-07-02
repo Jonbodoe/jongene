@@ -42,7 +42,6 @@ const Overview = () => {
                                 <div className="border-bottom"></div>
                                 <div className="py-sm-3 pt-3 text-secondary text-center d-flex justify-content-around px-sm-3">
                                     <a className="text-danger" target="_blank" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
-                                    <a className="text-danger" target="_blank" href="#"><i className="fa fa-file-text-o fa-2x px-1"></i></a>
                                     <a className="text-danger" target="_blank" href="mailto:jonathangene@gmail.com"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
                                 </div>
                             </div>
