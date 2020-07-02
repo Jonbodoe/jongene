@@ -28,7 +28,7 @@ const Overview = () => {
         }
     })
 
-    console.log(lightBoxState)
+    // console.log(lightBoxState)
     // splitImages(images)
     return (
         <>
