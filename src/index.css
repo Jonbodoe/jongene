@@ -23,9 +23,8 @@ h2 {
 #nav{
   height: 100vh;
 }
-#nav h2 {
-  /* font-family: 'Staatliches', cursive; */
-  font-family: 'Shrikhand', cursive;
+#nav h2, h2 {
+  font-family: 'Julius Sans One', sans-serif;
 }
 .bg-black {
   background-color: #1d2024
@@ -39,21 +38,39 @@ h2 {
 #author {
   border-radius: 100rem;
 }
-img.img-fluid {
+.image-column img.img-fluid {
   opacity: 1;
   transition: all 0.2s
 }
-img.img-fluid:hover {
-  opacity: 0.8;
+.image-column img.img-fluid:hover {
+  opacity: 0.6;
 }
 #menu-mobile {
   display: none;
 }
-
+.no-gutter{
+  padding: 0;
+}
+/* #content {
+  position: relative;
+} */
+#lightbox {
+  top: 0px;
+  position: fixed;
+  z-index: 9999;
+  height: 100vh
+}
+.no-scroll {
+  height:100%;
+  overflow: hidden;
+}
+.padding-top {
+  padding-top: 10rem;
+}
 /* 768 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   #filler, #author {
-    height: 8rem;
+    height: 6.5rem;
     /* display: none; */
   }
   #nav {

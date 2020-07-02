@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import Images from '../data/ImageData';
 import Fade from 'react-reveal/Fade';
 import ImageComponent from '../components/secondary/imageComponent';
+import LightBox from '../components/main/lightbox';
 
 
 
@@ -13,7 +14,12 @@ const Overview = () => {
     const leftImages = [];
     const rightImages = [];
 
-
+    const openLightBox = i => {
+        setLightBox({
+            index: i,
+            lightBoxOpen: !lightBoxState.lightBoxOpen ? !lightBoxState.lightBoxOpen : lightBoxState.lightBoxOpen
+        })
+    }
     Images.map((img) => {
         if (img.column === "LEFT") {
             return leftImages.push(img)
@@ -21,14 +27,15 @@ const Overview = () => {
             return rightImages.push(img)
         }
     })
+
+    console.log(lightBoxState)
     // splitImages(images)
     return (
         <>
-            <div id="gallery" className="container py-2">
+            <div id="gallery" className={`container-fluid py-2 ${lightBoxState.lightBoxOpen? 'no-scroll' : ''}`}>
                 <div id="menu-mobile">
                     <div className="d-flex justify-content-center py-3 bg-white fixed-top">
                         <div className="d-flex">
-                            <img id="author" className="img-fluid p-lg-4 p-1" src={require('../img/protraitshot.jpeg')} alt="Jonthan Gene Protrait Shot" />
                             <div className="px-5">
                                 <h2 className="font-weight-bolder no-xspace pb-1">JONATHAN GENE</h2>
                                 <p className="text-secondary">Media Content Creator</p>
@@ -42,35 +49,39 @@ const Overview = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row d-flex justify-content-center">
-                    <div id="filler" className="col-sm-2 w-100">
+                <div id="content" className={`row d-flex justify-content-center ${lightBoxState.lightBoxOpen? 'no-scroll' : ''}`}>
+                    <div id="filler" className="col-lg-2">
                     </div>
-                    <div className="col-lg-5 no-gutter d-flex justify-content-center">
-                        {/* <Fade bottom> */}
-                        <div className="flex-column">
+                    {
+                        lightBoxState.lightBoxOpen ? <LightBox handler={setLightBox} info={lightBoxState} /> : <></>
+                    }
+                    <div className="col-lg-5 px-lg-4 d-flex justify-content-center">
+                        <div className="flex-column image-column pl-lg-5">
                             <Fade bottom>
                                 {
                                     leftImages.map((img) =>
-                                        <ImageComponent info={img} />
+                                        <button onClick={() => openLightBox(img.index)} className="btn no-gutter">
+                                            <ImageComponent info={img} />
+                                        </button>
                                     )
                                 }
                             </Fade>
                         </div>
-                        {/* </Fade> */}
                     </div>
-
-                    <div className="col-lg-5 no-gutter d-flex justify-content-center">
-
-                        <div className="flex-column">
+                    <div className="col-lg-5 px-lg-4 d-flex justify-content-center">
+                        <div className="flex-column image-column pr-lg-5">
                             <Fade bottom>
                                 {
                                     rightImages.map((img) =>
-                                        // <Fade bottom>
-                                        <ImageComponent info={img} />
+                                        <button onClick={() => openLightBox(img.index)} className="btn no-gutter">
+                                            <ImageComponent info={img} />
+                                        </button>
                                     )
                                 }
                             </Fade>
                         </div>
+                    </div>
+                    <div className="col-lg-1">
                     </div>
                 </div>
                 <div className="row">
