@@ -1,19 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.41c7051d.chunk.css",
-    "main.js": "/static/js/main.b88edf91.chunk.js",
-    "main.js.map": "/static/js/main.b88edf91.chunk.js.map",
+    "main.js": "/static/js/main.dbfd8382.chunk.js",
+    "main.js.map": "/static/js/main.dbfd8382.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b7c851bc.js",
     "runtime-main.js.map": "/static/js/runtime-main.b7c851bc.js.map",
     "static/js/2.83682e95.chunk.js": "/static/js/2.83682e95.chunk.js",
     "static/js/2.83682e95.chunk.js.map": "/static/js/2.83682e95.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0b9487d56e1b94f2e5534a52ab428c66.js": "/precache-manifest.0b9487d56e1b94f2e5534a52ab428c66.js",
+    "precache-manifest.df3a136eeef57403c247107a608229bd.js": "/precache-manifest.df3a136eeef57403c247107a608229bd.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.41c7051d.chunk.css.map": "/static/css/main.41c7051d.chunk.css.map",
     "static/js/2.83682e95.chunk.js.LICENSE.txt": "/static/js/2.83682e95.chunk.js.LICENSE.txt",
-    "static/media/bboy.jpg": "/static/media/bboy.e354a1d5.jpg",
-    "static/media/car.jpg": "/static/media/car.839bacd5.jpg",
+    "static/media/blue-bg.jpg": "/static/media/blue-bg.6eb60201.jpg",
     "static/media/chinatown.jpg": "/static/media/chinatown.918651d8.jpg",
     "static/media/city-hall.jpg": "/static/media/city-hall.76d6333b.jpg",
     "static/media/coffee.jpg": "/static/media/coffee.934e20f7.jpg",
@@ -28,6 +27,7 @@
     "static/media/pink-bg.jpg": "/static/media/pink-bg.36f603dc.jpg",
     "static/media/pink-outfit.jpg": "/static/media/pink-outfit.f8e58a0b.jpg",
     "static/media/index.css": "/static/media/protraitshot.5f796e0c.jpeg",
+    "static/media/pud-factory.jpg": "/static/media/pud-factory.8abb7063.jpg",
     "static/media/skyscraper.jpg": "/static/media/skyscraper.23275e56.jpg",
     "static/media/smalls.jpg": "/static/media/smalls.a2dba714.jpg",
     "static/media/stairs.jpg": "/static/media/stairs.1a7c47b7.jpg",
@@ -42,6 +42,6 @@
     "static/js/runtime-main.b7c851bc.js",
     "static/js/2.83682e95.chunk.js",
     "static/css/main.41c7051d.chunk.css",
-    "static/js/main.b88edf91.chunk.js"
+    "static/js/main.dbfd8382.chunk.js"
   ]
 }
