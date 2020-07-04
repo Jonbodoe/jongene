@@ -18,6 +18,7 @@ h1 {
 }
 h2 {
   font-size: 1.4rem;
+  font-weight: bold;
   margin:0;
 }
 #nav{
@@ -78,6 +79,9 @@ h2 {
 #mobile-arrow-guide {
   display: none;
 }
+.nav-link {
+  padding: 5px 0px;
+}
 /* 768 */
 @media only screen and (max-width: 992px) {
   #filler, #author {
@@ -91,14 +95,20 @@ h2 {
     display: inline;
   }
   .protrait-img{
-    max-width: 100%;
-    height: auto;
+    width: 80%;
+    /* display: flex;
+    align-content: center;
+    max-width: 80%;
+    height: auto; */
   }
   .arrow-guide {
     display: none;
   }
   #mobile-arrow-guide {
     display: flex;
+  }
+  #container {
+    max-width: 1800px;
   }
   /* #gallery {
     padding: 0rem 3rem

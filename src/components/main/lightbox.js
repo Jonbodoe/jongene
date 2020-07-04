@@ -31,7 +31,7 @@ const LightBox = (props) => {
                                 </button>
                             </div>
                             <div className="d-flex justify-content-center">
-                                <img className={`lightbox-image ${currentImage[0].orientation === "LANDSCAPE" ? 'img-fluid' : 'protrait-img'}`} src={currentImage[0].src} alt="" />
+                                    <img className={`lightbox-image ${currentImage[0].orientation === "LANDSCAPE" ? 'img-fluid' : 'protrait-img'}`} src={currentImage[0].src} alt="" />
                             </div>
                         </div>
                     {/* </div> */}

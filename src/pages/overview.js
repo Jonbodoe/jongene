@@ -35,13 +35,12 @@ const Overview = () => {
             {
                 lightBoxState.lightBoxOpen ? <LightBox handler={setLightBox} info={lightBoxState} /> : <></>
             }
-            <div id="gallery" className={`container-fluid py-2 ${lightBoxState.lightBoxOpen ? 'no-scroll' : ''}`}>
+            <div id="gallery" className={`container-fluid py-2x`}>
                 <div id="menu-mobile">
                     <div className="d-flex justify-content-center py-2 bg-white fixed-top">
                         <div className="d-flex">
                             <div className="px-5">
                                 <h2 className="font-weight-bolder no-xspace pb-1">JONATHAN GENE</h2>
-                                <p className="text-secondary">Media Content Creator</p>
                                 <div className="border-bottom"></div>
                                 <div className="py-sm-2 pt-2 text-secondary text-center d-flex justify-content-around px-sm-3">
                                     <a className="text-danger" target="_blank" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
