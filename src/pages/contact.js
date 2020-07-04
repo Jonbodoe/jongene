@@ -2,9 +2,9 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import MobileNav from '../components/main/mobileNav';
 
-const About = () => {
+const Contact = () => {
     return <>
-    <MobileNav/>
+        <MobileNav />
         <div className="container">
             <div className="row">
                 <Fade bottom>
@@ -17,7 +17,11 @@ const About = () => {
                         <div className="p-4">
                             <h2 className="py-2">About</h2>
                             <div className="border-bottom border-secondary pt-2"></div>
-                            <p className="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p className="py-3">
+                                Hello, my name is Jonathan Gene and I am a young professional born from Philadelphia. I’ve graduated from Temple University with a degree
+                                in Film and Media Arts as well as 5 years of working experience with photography/videography and photo editing.
+                            </p>
+                            <p className="">Email: JonathanGene@gmail.com</p>
                         </div>
                     </div>
                 </Fade>
@@ -27,4 +31,4 @@ const About = () => {
     </>
 }
 
-export default About
+export default Contact

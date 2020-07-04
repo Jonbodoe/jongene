@@ -38,7 +38,7 @@ const Overview = () => {
             }
             <div id="gallery" className={`container-fluid py-2x`}>
                 <MobileNav/>
-                <div id="content" className={`row d-flex justify-content-center ${lightBoxState.lightBoxOpen ? 'no-scroll' : ''}`}>
+                <div id="content" className={`row d-flex justify-content-center`}>
                     <div id="filler" className="col-lg-2">
                     </div>
                     <div className="col-lg-5 px-lg-4 d-flex justify-content-center">
@@ -66,8 +66,6 @@ const Overview = () => {
                                 }
                             </Fade>
                         </div>
-                    </div>
-                    <div className="col-lg-1">
                     </div>
                 </div>
                 <div className="row">

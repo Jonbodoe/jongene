@@ -18,7 +18,7 @@ const NavBar = () => {
                 <div className="py-2">
                     <Link className="nav-link text-dark" to="/">Photos</Link>
                     <Link className="nav-link text-dark" to="/video">Videos</Link>
-                    <Link className="nav-link text-dark" to="/about">About</Link>
+                    <Link className="nav-link text-dark" to="/contact">Contact</Link>
                 </div>
                 <div className="py-sm-2 text-secondary text-center d-flex">
                     <a className="text-danger" target="_blank" rel="noopener noreferrer" href="//instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-2"></i></a>

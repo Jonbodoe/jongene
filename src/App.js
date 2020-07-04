@@ -8,7 +8,7 @@ import {
 import NavBar from './components/main/nav'
 import Overview from './pages/overview';
 import BodyContainer from './components/main/body'
-import About from './pages/about';
+import Contact from './pages/contact';
 import Video from './pages/video';
 
 function App() {
@@ -21,8 +21,8 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/`}>
             <Overview />
           </Route>
-          <Route path={`${process.env.PUBLIC_URL}/about`}>
-            <About />
+          <Route path={`${process.env.PUBLIC_URL}/contact`}>
+            <Contact />
           </Route>
           <Route path={`${process.env.PUBLIC_URL}/video`}>
             <Video />
