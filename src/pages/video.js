@@ -5,10 +5,12 @@ import MobileNav from '../components/main/mobileNav';
 
 const Video = () => {
     return <>
-        <MobileNav/>
+        <MobileNav />
         <div className="container">
             <div className="row">
-                <div className="col-lg-2"></div>
+                <div className="col-lg-2">
+                    <div id="filler"></div>
+                </div>
                 <div className="col-lg-10 py-4">
                     <Fade bottom>
                         <div className="py-5">

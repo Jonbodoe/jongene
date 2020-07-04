@@ -8,7 +8,9 @@ const About = () => {
         <div className="container">
             <div className="row">
                 <Fade bottom>
-                    <div className="col-lg-2"></div>
+                    <div className="col-lg-2">
+                        <div id="filler"></div>
+                    </div>
                     <div id="profile-img" className="col-lg-6">
                     </div>
                     <div className="col-lg-4 p-3 d-flex align-self-center p-lg-4">
