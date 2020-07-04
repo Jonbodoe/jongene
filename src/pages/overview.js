@@ -3,6 +3,7 @@ import Images from '../data/ImageData';
 import Fade from 'react-reveal/Fade';
 import ImageComponent from '../components/secondary/imageComponent';
 import LightBox from '../components/main/lightbox';
+import MobileNav from '../components/main/mobileNav';
 
 
 
@@ -36,20 +37,7 @@ const Overview = () => {
                 lightBoxState.lightBoxOpen ? <LightBox handler={setLightBox} info={lightBoxState} /> : <></>
             }
             <div id="gallery" className={`container-fluid py-2x`}>
-                <div id="menu-mobile">
-                    <div className="d-flex justify-content-center py-2 bg-white fixed-top">
-                        <div className="d-flex">
-                            <div className="px-5">
-                                <h2 className="font-weight-bolder no-xspace pb-1">JONATHAN GENE</h2>
-                                <div className="border-bottom"></div>
-                                <div className="py-sm-2 pt-2 text-secondary text-center d-flex justify-content-around px-sm-3">
-                                    <a className="text-danger" target="_blank" rel="noopener noreferrer" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
-                                    <a className="text-danger" target="_blank" rel="noopener noreferrer" href="mailto:jonathangene@gmail.com"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <MobileNav/>
                 <div id="content" className={`row d-flex justify-content-center ${lightBoxState.lightBoxOpen ? 'no-scroll' : ''}`}>
                     <div id="filler" className="col-lg-2">
                     </div>

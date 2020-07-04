@@ -116,9 +116,9 @@ h2 {
   #container {
     max-width: 1800px;
   }
-  .profile-img{
-    height: 30vh;
-    width: auto;
+  #profile-img{
+    height: 40vh;
+    width: 100%;
   }
   /* #gallery {
     padding: 0rem 3rem

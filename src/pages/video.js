@@ -1,9 +1,11 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
+import MobileNav from '../components/main/mobileNav';
 // import { Link } from 'react-router-dom';
 
 const Video = () => {
     return <>
+        <MobileNav/>
         <div className="container">
             <div className="row">
                 <div className="col-lg-2"></div>
