@@ -29,14 +29,14 @@ const Images =
         },
         {
             index: 3,
-            src: require('../img/k-and-a.jpg'),
+            src: require('../img/skyscraper.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: RIGHT
         },
         {
             index: 4,
-            src: require('../img/car.jpg'),
+            src: require('../img/pud-factory.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: LEFT
@@ -57,7 +57,7 @@ const Images =
         },
         {
             index: 7,
-            src: require('../img/bboy.jpg'),
+            src: require('../img/blue-bg.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: LEFT
@@ -162,7 +162,7 @@ const Images =
         },
         {
             index: 22,
-            src: require('../img/skyscraper.jpg'),
+            src: require('../img/k-and-a.jpg'),
             alt: "",
             orientation: LANDSCAPE,
             column: RIGHT
