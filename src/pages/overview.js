@@ -20,7 +20,7 @@ const Overview = () => {
             lightBoxOpen: !lightBoxState.lightBoxOpen ? !lightBoxState.lightBoxOpen : lightBoxState.lightBoxOpen
         })
     }
-    Images.map((img) => {
+    Images.filter((img) => {
         if (img.column === "LEFT") {
             return leftImages.push(img)
         } else if (img.column === "RIGHT") {
@@ -43,8 +43,8 @@ const Overview = () => {
                                 <h2 className="font-weight-bolder no-xspace pb-1">JONATHAN GENE</h2>
                                 <div className="border-bottom"></div>
                                 <div className="py-sm-2 pt-2 text-secondary text-center d-flex justify-content-around px-sm-3">
-                                    <a className="text-danger" target="_blank" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
-                                    <a className="text-danger" target="_blank" href="mailto:jonathangene@gmail.com"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
+                                    <a className="text-danger" target="_blank" rel="noopener noreferrer" href="instagram.com/lostshots"><i className="fa fa-instagram fa-2x px-1"></i></a>
+                                    <a className="text-danger" target="_blank" rel="noopener noreferrer" href="mailto:jonathangene@gmail.com"><i className="fa fa-envelope-o fa-2x px-1"></i></a>
                                 </div>
                             </div>
                         </div>

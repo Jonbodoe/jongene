@@ -82,6 +82,12 @@ h2 {
 .nav-link {
   padding: 5px 0px;
 }
+#profile-img{
+  background-image: url("./img/protraitshot.jpeg");
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
 /* 768 */
 @media only screen and (max-width: 992px) {
   #filler, #author {
@@ -109,6 +115,10 @@ h2 {
   }
   #container {
     max-width: 1800px;
+  }
+  .profile-img{
+    height: 30vh;
+    width: auto;
   }
   /* #gallery {
     padding: 0rem 3rem
